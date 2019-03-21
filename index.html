@@ -11,6 +11,34 @@
 </head>
 <body>
 	<style type="text/css">
+        #name {
+            text-align: center;
+            font-size: 50px;
+            font-family: Arial;
+        }
+
+        .context {
+            width: 80%;
+            height: 70px;
+            margin: auto;
+        }
+
+        #about-photo {
+            width: 25%;
+            float: left;
+        }
+
+        #about-text {
+            margin-left: 28%;
+            padding-top: 1%;
+        }
+
+        .text {
+            text-align: left;
+            font-size: 25px;
+            font-family: Arial;
+        }
+
         .nav-bar {
             width: 100%;
             height: 50px;
@@ -42,8 +70,15 @@
     </div>
 
 	<div class=home>
-    	<p> Hiroko Abe </p>
-    	<img src="Your-Photo.jpg">
+    	<h1 id="name"> Hiroko Abe </h1>
+    </div>
+
+    <div class=context>
+    	<img src="Your-Photo.jpg" id="about-photo">
+        <p class=text id="about-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Morbi et elit sit amet ipsum tempor efficitur. Praesent metus metus,
+        malesuada et nunc in, maximus dictum magna. Cras vitae porttitor tellus,
+        ac aliquet urna.</p>
     </div>
 
     <script type="text/javascript" src="interactions.js"></script>    <!-- Insert JQuery Script -->
