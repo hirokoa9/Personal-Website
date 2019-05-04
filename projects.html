@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Give Me a Title!</title>                           <!-- Give Title -->
+    <title>Projects</title>                           <!-- Give Title -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css">  <!-- Insert StyleSheet -->
     <link rel="icon" href="cool-icon.png">                    <!-- Insert Icon -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-		<div class=nav-bar>
+	<div class=nav-bar>
     	<a href='index.html' class=element> Home </a>
     	<a href='education.html' class=element> Education </a>
     	<a href='projects.html' class=element> Projects </a>
@@ -20,8 +20,42 @@
     <div class=projects>
         <h1 class=header> Projects </h1>
     	<p class=text> Fundamentals of Programming Course - Term Project </p>
-    	<img src="termproject.png" id="project-photo">
     </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="termproject.png" alt="Top" onclick="gallery(this);">
+        </div>
+        <div class="column">
+            <img src="HowTo1.png" alt="HowTo_pg1" onclick="gallery(this);">
+        </div>
+        <div class="column">
+            <img src="HowTo2.png" alt="HowTo_pg2" onclick="gallery(this);">
+        </div>
+        <div class="column">
+            <img src="Scoreboard.png" alt="Scoreboard" onclick="gallery(this);">
+        </div>
+    </div>
+
+    <div class="container">
+        <span onclick="this.parentElement.style.display='none'"
+              class="closebtn">&times;
+        </span>
+
+        <img id="expanded" src="termproject.png"> </img>
+
+        <div id="imgtext"> </div>
+    </div>
+
+    <img src="white.png" alt="Nothing" "gallery(this)"> </img>
+
+    <script>
+    function gallery(imgs) {
+        var expand = document.getElementById("expanded");
+        expand.src = imgs.src;
+        expand.parentElement.style.display = "block";
+    }
+    </script>
 
     <div class="footer">
         <div id="footer_github" class="footer_elem" style="background: unset;">
